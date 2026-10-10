@@ -108,3 +108,60 @@
 .rank-disclaimer{max-width:850px;margin:30px auto 0;color:#8996a6;font-size:12px;line-height:1.7;text-align:center}
 @media(max-width:900px){.rank-list{grid-template-columns:repeat(2,minmax(0,1fr))}.official-insignia-panel{gap:22px;padding:24px}}
 @media(max-width:620px){.official-insignia-panel{grid-template-columns:1fr;gap:24px;margin:24px 0 38px;padding:20px}.official-insignia-images img{height:125px}.rank-list{grid-template-columns:1fr;gap:10px}.rank-list .rank-card{min-height:unset;padding:21px 18px}.rank-list .rank-card h4{font-size:17px}.rank-group-heading{gap:12px}.rank-group-count{white-space:nowrap}}
+
+
+/* Nueva identidad cromática: carbón, rojo institucional y acero */
+:root{--navy:#151719;--navy2:#202326;--blue:#343b42;--gold:#c84b4b;--paper:#f2f2f0;--ink:#202326;--muted:#687078;--line:#d8dadd;--white:#fff}
+body{background:#f2f2f0;color:#202326}
+.fiction-banner{background:#0c0d0e;color:#d1d3d5}
+.status-dot,.hero-meta i{background:#c84b4b;box-shadow:0 0 0 3px #c84b4b22}
+.site-header{background:#fff;border-bottom-color:#dfe1e3}
+.main-nav>a:not(.nav-cta):hover,.text-link:hover{color:#b7353b}
+.nav-cta{background:#b7353b;color:#fff}
+.nav-cta span{color:#fff}
+.menu-toggle{color:#202326}
+.hero{background:#151719;color:#fff}
+.hero:after{border-color:#c84b4b25;box-shadow:0 0 0 65px #c84b4b0b,0 0 0 130px #c84b4b07}
+.eyebrow,.section-label{color:#e06a6a}
+.line{background:#c84b4b}
+.hero h1 span{color:#e06a6a}
+.button-primary{background:#c84b4b;color:#fff}
+.button-primary:hover{background:#a9343b}
+.seal-ring{border-color:#d96767;outline-color:#d9676750}
+.seal-ring:before,.seal-ring:after{border-color:#d9676755}
+.hero-seal{color:#e06a6a}
+.intro{background:#f2f2f0}
+.section-label span{color:#81878d}
+.intro h2 span,.hierarchy-heading h2 span{color:#b7353b}
+.intro-copy p{color:#626970}
+.text-link{color:#202a32}
+.text-link span{color:#c84b4b}
+.hierarchy{background:#e9ebed}
+.hierarchy:before{background:linear-gradient(#c84b4b,#8d252c,transparent)}
+.patch-feature{background:#fff;border-color:#d6d9dc}
+.rank-group-heading{border-bottom-color:#cfd3d7}
+.rank-group-index{color:#c84b4b}
+.rank-group-heading h3{color:#202326}
+.rank-group-heading p{color:#70777e}
+.rank-group-count{color:#666e76;border-color:#cbd0d4}
+.rank-list .rank-card{background:#fff;border-color:#d8dcdf;box-shadow:0 6px 18px #1013150a}
+.rank-list .rank-card:hover{border-color:#c84b4b;background:#fff;box-shadow:0 12px 25px #10131512}
+.rank-list .rank-number{color:#bd444b}
+.rank-list .rank-order{color:#a33a40}
+.rank-list .rank-card h4{color:#202326}
+.rank-list .rank-card p{color:#687078}
+.rank-list .rank-chief{background:linear-gradient(135deg,#24272a,#151719);border-color:#3b3f43}
+.rank-list .rank-chief h4{color:#fff}
+.rank-list .rank-chief .rank-order{color:#ef8585}
+.rank-list .rank-chief .rank-number{color:#f0a0a0}
+.rank-list .rank-chief p{color:#c5c9cc}
+.executive-group .rank-group-index,.command-group .rank-group-index,.supervisory-group .rank-group-index,.field-group .rank-group-index{color:#c84b4b}
+.rank-disclaimer{color:#70777e;border-top-color:#cfd3d7}
+.official-insignia-panel{background:linear-gradient(125deg,#24272a,#121416);border-color:#45494d}
+.official-insignia-copy h3{color:#f5f5f3}
+.official-insignia-copy p{color:#c0c4c7}
+.official-insignia-images figcaption{color:#d2d5d7}
+.recruit{background:#202326;color:#fff}
+.recruit h2 span{color:#e06a6a}
+footer,.site-footer{background:#101112;color:#c3c6c8}
+@media(max-width:760px){.site-header{background:#fff}.main-nav{background:#fff}}
