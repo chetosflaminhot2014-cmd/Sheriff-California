@@ -34,3 +34,45 @@
 .rank-group .rank-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:760px){.rank-group .rank-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:420px){.rank-group-title{font-size:22px}.rank-group .rank-grid{grid-template-columns:1fr 1fr}}
+
+
+/* Rediseño visual de la jerarquía */
+.hierarchy{background:#f3f4f5;position:relative;overflow:hidden}
+.hierarchy:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;background:linear-gradient(var(--gold),#9a7838,transparent)}
+.hierarchy-heading{position:relative}
+.hierarchy-heading h2 span{color:#a17b3b}
+.patch-feature{background:#fff;border:1px solid #e0e3e7;box-shadow:0 12px 35px #101a2b08;border-radius:3px}
+.patch-feature img{border:1px solid #e8eaed}
+.rank-group{margin-top:38px}
+.rank-group-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:0 0 13px;margin:0 0 16px;border-bottom:1px solid #d8dce1}
+.rank-group-heading>div{display:grid;grid-template-columns:36px auto;column-gap:12px;align-items:center}
+.rank-group-index{grid-row:1/3;font-family:'Barlow Condensed',sans-serif;font-size:25px;color:#b28c49;font-weight:800}
+.rank-group-heading h3{font-family:'Barlow Condensed',sans-serif;font-size:26px;letter-spacing:.6px;text-transform:uppercase;line-height:1.05;margin:0;color:#142137}
+.rank-group-heading p{font-size:10px;color:#7a8491;margin:4px 0 0}
+.rank-group-count{font-size:8px;font-weight:800;letter-spacing:1.5px;color:#77818e;border:1px solid #d7dce2;padding:8px 10px;white-space:nowrap}
+.rank-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.rank-card{min-height:180px;padding:17px 17px 19px;border:1px solid #e0e4e9;border-radius:3px;background:#fff;box-shadow:0 5px 15px #101a2b06;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.rank-card:hover{transform:translateY(-4px);box-shadow:0 13px 24px #101a2b12;border-color:#c5a15c}
+.rank-card-top{display:flex;justify-content:space-between;align-items:center;min-height:37px;padding-bottom:10px;border-bottom:1px solid #edf0f2}
+.rank-number{font-size:9px;letter-spacing:1.2px;font-weight:800;color:#a0a8b2}
+.rank-insignia{height:auto;min-height:28px;justify-content:flex-end;color:#b38b43;font-size:20px;letter-spacing:2px}
+.rank-insignia.chevrons{font-size:27px}
+.rank-order{font-size:8px;letter-spacing:1.2px;color:#9a7838;margin-top:13px}
+.rank-card h4{font-family:'Barlow Condensed',sans-serif;font-size:22px;text-transform:uppercase;line-height:1.05;margin:7px 0 6px;color:#19263a;overflow-wrap:anywhere}
+.rank-card p:not(.rank-person){font-size:10px;line-height:1.5;color:#7a8491;margin:0}
+.rank-person{font-size:11px;color:#d8b46b;font-weight:700;margin:0}
+.rank-chief{background:linear-gradient(145deg,#1b2b43,#101a2b);border-color:#263a56;box-shadow:0 8px 22px #101a2b18}
+.rank-chief .rank-number{color:#aab7c8}
+.rank-chief .rank-card-top{border-color:#ffffff1a}
+.rank-chief h4{color:#fff}
+.rank-chief .rank-order{color:#d8b46b}
+.rank-chief .rank-person{color:#e5c986}
+.rank-chief p:not(.rank-person){color:#b4c0cf}
+.executive-group .rank-group-index{color:#c09a51}
+.command-group .rank-group-index{color:#7d93b0}
+.supervisory-group .rank-group-index{color:#8799a7}
+.field-group .rank-group-index{color:#9b855e}
+.rank-disclaimer{font-size:10px;line-height:1.7;color:#77818e;margin-top:24px;padding-top:15px;border-top:1px solid #d8dce1}
+@media(max-width:950px){.rank-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.hierarchy{padding-left:6%;padding-right:6%}.patch-feature{grid-template-columns:100px 1fr;text-align:left;gap:16px;padding:16px}.patch-feature img{width:100px;height:100px}.patch-feature p{font-size:11px}.rank-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.rank-card{min-height:165px;padding:13px}.rank-card h4{font-size:19px}.rank-group-heading h3{font-size:23px}.rank-group-count{font-size:7px;padding:7px}.rank-group-heading p{font-size:9px}}
+@media(max-width:380px){.rank-grid{grid-template-columns:1fr}.rank-card{min-height:145px}.rank-card h4{font-size:22px}.rank-group-heading{align-items:flex-start}.rank-group-count{margin-top:3px}}
