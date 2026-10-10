@@ -3,92 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102a47">
-  <meta name="description" content="Portal ficticio del Sheriff Department de California Roleplay. Información institucional, jerarquía, formación y convocatorias.">
-  <title>Sheriff Department | California Roleplay</title>
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Frecuencia: descubre conciertos, artistas y sonidos nuevos de la escena independiente.">
+  <title>FRECUENCIA — La música está pasando</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="fiction-banner"><span class="status-dot"></span> SITIO FICTICIO DE ROLEPLAY · NO ES UNA AGENCIA GUBERNAMENTAL</div>
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Sheriff Department, inicio">
-      <img class="brand-logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Badge_of_the_San_Diego_County_Sheriff_Department.svg" alt="Insignia de referencia del departamento del sheriff de San Diego">
-      <span class="brand-copy"><strong>SHERIFF DEPARTMENT</strong><small>CALIFORNIA ROLEPLAY</small></span>
-    </a>
+  <div class="topline"><span class="live-dot"></span> CULTURA SONORA INDEPENDIENTE <span class="topline-right">NUEVOS SONIDOS, SIN RUIDO.</span></div>
+  <header class="header">
+    <a class="wordmark" href="#inicio" aria-label="Frecuencia, inicio">F<span>·</span> <b>FRECUENCIA</b></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
-      <a href="#institucion">Departamento</a><a href="#jerarquia">Jerarquía</a><a href="#formacion">Formación</a><a href="#convocatorias">Noticias</a>
-      <a class="nav-cta" href="#ingreso">Proceso de ingreso <span>↗</span></a>
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#agenda">Agenda</a><a href="#descubre">Descubre</a><a href="#manifiesto">El proyecto</a>
+      <a class="nav-button" href="#agenda">Ver eventos <span>↗</span></a>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-photo" role="img" aria-label="Imagen ilustrativa de una patrulla policial"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> CALIFORNIA ROLEPLAY · PORTAL INSTITUCIONAL</p>
-        <h1>AL SERVICIO<br>DE <em>LA COMUNIDAD.</em></h1>
-        <p class="hero-description">Disciplina, preparación y trabajo en equipo. Conoce nuestra organización ficticia, su estructura de mando y las oportunidades para formar parte del departamento dentro de California Roleplay.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#institucion">Conocer el departamento <span>→</span></a><a class="button button-outline" href="#convocatorias">Ver convocatorias</a></div>
+      <div class="hero-copy">
+        <p class="kicker"><span class="line"></span> UNA VENTANA A LA ESCENA</p>
+        <h1>EL SONIDO<br>DE LO QUE<br><em>VIENE.</em></h1>
+        <p class="hero-text">Conciertos pequeños. Artistas enormes. Música que todavía no sabes que te va a cambiar el día.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#agenda">Explorar la agenda <span>↗</span></a><a class="text-link" href="#descubre">Conoce nuevos sonidos <span>↓</span></a></div>
+        <div class="hero-foot"><span>01 / ESCENA INDEPENDIENTE</span><span>SONIDO LOCAL · IDEAS GRANDES</span></div>
       </div>
-      <div class="hero-stamp" aria-hidden="true"><span>SHERIFF</span><b>★</b><strong>CA</strong><small>CALIFORNIA</small></div>
-      <div class="hero-bottom"><span><b>01</b> INSTITUCIÓN</span><span>UN PROYECTO DE ROLEPLAY</span></div>
+      <div class="hero-art" aria-label="Composición abstracta inspirada en ondas sonoras" role="img">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div>
+        <div class="art-disc"><div class="disc-core"></div></div>
+        <div class="art-sticker">TURN<br>IT<br>UP<span>✳</span></div>
+        <div class="art-label label-top">FREQ. 001 — 2026</div><div class="art-label label-bottom">VOLUMEN AL MÁXIMO / MENTE ABIERTA</div>
+        <div class="art-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
     </section>
 
-    <section class="quick-nav" aria-label="Accesos directos">
-      <a href="#institucion"><span class="quick-icon">⌂</span><span><b>El departamento</b><small>Quiénes somos</small></span><i>↗</i></a>
-      <a href="#jerarquia"><span class="quick-icon">▤</span><span><b>Rangos y jerarquía</b><small>Cadena de mando</small></span><i>↗</i></a>
-      <a href="#formacion"><span class="quick-icon">◎</span><span><b>Formación</b><small>Programa FTP</small></span><i>↗</i></a>
-      <a href="#ingreso"><span class="quick-icon">＋</span><span><b>Reclutamiento</b><small>Cómo ingresar</small></span><i>↗</i></a>
+    <section class="ticker" aria-label="Lema"><div>DESCUBRE ALGO NUEVO <span>✳</span> SAL A ESCUCHAR <span>✳</span> APOYA LA ESCENA <span>✳</span> DESCUBRE ALGO NUEVO <span>✳</span> SAL A ESCUCHAR <span>✳</span></div></section>
+
+    <section class="section agenda-section" id="agenda">
+      <div class="section-heading"><div><p class="kicker">01 — PRÓXIMAS FRECUENCIAS</p><h2>Hay que estar <em>ahí.</em></h2></div><p class="section-intro">No son estadios gigantes. Son noches que se quedan contigo.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar eventos">
+        <button class="filter active" data-filter="todos" aria-pressed="true">Todo</button><button class="filter" data-filter="indie" aria-pressed="false">Indie</button><button class="filter" data-filter="electronica" aria-pressed="false">Electrónica</button><button class="filter" data-filter="alternativo" aria-pressed="false">Alternativo</button>
+      </div>
+      <div class="event-grid" id="eventGrid">
+        <article class="event-card" data-genre="indie"><div class="event-art art-pink"><span class="art-number">LIVE / 001</span><div class="sun-shape"></div><div class="poster-word">SOFT<br>NOISE</div><span class="poster-foot">GUITARRAS · SUEÑOS · DISTORSIÓN</span></div><div class="event-info"><div class="event-meta"><span>INDIE / ROCK</span><span>CDMX</span></div><h3>Soft Noise Sessions</h3><p>Una noche para escuchar más cerca.</p><div class="event-bottom"><span><b>18</b> OCT <i>·</i> 20:00</span><a href="#manifiesto" aria-label="Más sobre Soft Noise Sessions">↗</a></div></div></article>
+        <article class="event-card" data-genre="electronica"><div class="event-art art-lilac"><span class="art-number">LIVE / 002</span><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="poster-word poster-electro">PULSO<br>FUTURO</div><span class="poster-foot">BASS · SYNTH · AFTER HOURS</span></div><div class="event-info"><div class="event-meta"><span>ELECTRÓNICA</span><span>GUADALAJARA</span></div><h3>Pulso Futuro</h3><p>Frecuencias para salir de órbita.</p><div class="event-bottom"><span><b>24</b> OCT <i>·</i> 22:00</span><a href="#manifiesto" aria-label="Más sobre Pulso Futuro">↗</a></div></div></article>
+        <article class="event-card" data-genre="alternativo"><div class="event-art art-green"><span class="art-number">LIVE / 003</span><div class="green-shape"></div><div class="poster-word poster-ruido">RUIDO<br>BUENO</div><span class="poster-foot">SIN REGLAS · SIN ETIQUETAS</span></div><div class="event-info"><div class="event-meta"><span>ALTERNATIVO</span><span>MONTERREY</span></div><h3>Ruido Bueno Club</h3><p>Lo raro también se baila.</p><div class="event-bottom"><span><b>01</b> NOV <i>·</i> 21:00</span><a href="#manifiesto" aria-label="Más sobre Ruido Bueno Club">↗</a></div></div></article>
+      </div>
+      <p class="demo-note">Agenda conceptual de demostración · Los eventos y fechas son ilustrativos.</p>
     </section>
 
-    <section class="section about" id="institucion">
-      <div class="section-intro"><p class="section-kicker">SHERIFF DEPARTMENT / SOBRE NOSOTROS</p><h2>Una institución construida<br>sobre <em>el compromiso.</em></h2></div>
-      <div class="about-copy"><p>El Sheriff Department de California Roleplay es una institución ficticia para un entorno de juego. Su propósito es ofrecer una experiencia organizada de interpretación de roles basada en la responsabilidad, la coordinación y el respeto a las reglas del servidor.</p><p>Promovemos una comunidad donde cada integrante conozca sus funciones, se prepare para sus responsabilidades y contribuya a una experiencia de roleplay coherente.</p><a class="inline-link" href="#ingreso">Descubre cómo formar parte <span>→</span></a></div>
-      <div class="fact-row"><article><span class="fact-number">01</span><div><b>Servicio</b><small>Actuar con responsabilidad y respeto.</small></div></article><article><span class="fact-number">02</span><div><b>Preparación</b><small>Aprender normas y procedimientos del servidor.</small></div></article><article><span class="fact-number">03</span><div><b>Trabajo en equipo</b><small>Coordinarse y apoyar a la comunidad.</small></div></article></div>
+    <section class="discover" id="descubre">
+      <div class="discover-art"><div class="big-star">✳</div><span class="vertical-note">NO AL ALGORITMO DE SIEMPRE</span><div class="discover-stamp">LISTEN<br>CLOSER.</div></div>
+      <div class="discover-copy"><p class="kicker">02 — CAMBIA DE FRECUENCIA</p><h2>Tu próxima canción favorita no está en tu <em>repetición.</em></h2><p>Sal del bucle. Encuentra proyectos emergentes, sesiones íntimas y sonidos que no caben en una sola etiqueta.</p><div class="genre-list"><span>01 / INDIE</span><span>02 / ELECTRÓNICA</span><span>03 / EXPERIMENTAL</span><span>04 / ALTERNATIVO</span></div><a class="button button-dark" href="#agenda">Encontrar un concierto <span>↗</span></a></div>
     </section>
 
-    <section class="leadership">
-      <div class="leadership-emblem" aria-hidden="true"><span>★</span><b>CA</b></div><div class="leadership-copy"><p class="section-kicker">DIRECCIÓN DEL DEPARTAMENTO</p><h2>Sheriff <strong>Clark_Thomsop</strong></h2><p>Fundador · California Roleplay</p></div><div class="leadership-quote"><span>“</span><p>El liderazgo se demuestra con preparación, disciplina y respeto.</p></div>
-    </section>
-
-    <section class="section hierarchy" id="jerarquia">
-      <div class="section-title-row"><div><p class="section-kicker">ORGANIZACIÓN INTERNA</p><h2>Una cadena de<br><em>mando clara.</em></h2></div><p>Consulta la estructura de rangos definida para California Roleplay. Los nombres y niveles de esta jerarquía son propios del proyecto ficticio.</p></div>
-      <div class="reference-panel"><div class="reference-copy"><span class="mini-label">REFERENCIA VISUAL</span><h3>Insignias y uniformes</h3><p>Las imágenes que aparecen aquí son referencias de una agencia real y no representan rangos oficiales de California Roleplay.</p><a class="inline-link light-link" href="https://lasd.org/transparency/uniforms-and-logos/" target="_blank" rel="noopener noreferrer">Consultar la guía oficial del LASD <span>↗</span></a></div><div class="reference-images"><figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Badge_of_the_Sheriff_of_Los_Angeles_County.png" alt="Distintivo del Sheriff del condado de Los Ángeles" loading="lazy"><figcaption>Distintivo de referencia</figcaption></figure><figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Patch_of_the_Los_Angeles_County_Sheriff%27s_Department.png" alt="Parche del departamento del sheriff del condado de Los Ángeles" loading="lazy"><figcaption>Parche de referencia</figcaption></figure></div></div>
-
-      <div class="rank-group"><div class="rank-heading"><div><span>01</span><div><h3>Executive Staff</h3><p>Dirección ejecutiva</p></div></div><small>04 RANGOS</small></div><div class="rank-grid">
-        <article class="rank-card rank-chief"><span>01 / DIRECCIÓN</span><h4>Sheriff</h4><p>Clark_Thomsop</p></article>
-        <article class="rank-card"><span>02 / EJECUTIVO</span><h4>UnderSheriff</h4><p>Segundo al mando</p></article>
-        <article class="rank-card"><span>03 / EJECUTIVO</span><h4>Assistant Sheriff</h4><p>Dirección adjunta</p></article>
-        <article class="rank-card"><span>04 / EJECUTIVO</span><h4>División Chief</h4><p>Jefatura de división</p></article>
-      </div></div>
-      <div class="rank-group"><div class="rank-heading"><div><span>02</span><div><h3>Command Staff</h3><p>Mando departamental</p></div></div><small>02 RANGOS</small></div><div class="rank-grid">
-        <article class="rank-card"><span>05 / MANDO</span><h4>Commander</h4><p>Comando departamental</p></article><article class="rank-card"><span>06 / MANDO</span><h4>Captain</h4><p>Capitán</p></article>
-      </div></div>
-      <div class="rank-group"><div class="rank-heading"><div><span>03</span><div><h3>Supervisory Staff</h3><p>Supervisión operativa</p></div></div><small>03 RANGOS</small></div><div class="rank-grid">
-        <article class="rank-card"><span>07 / SUPERVISIÓN</span><h4>Lieutenant</h4><p>Teniente</p></article><article class="rank-card"><span>08 / SUPERVISIÓN</span><h4>Sergeant</h4><p>Sargento</p></article><article class="rank-card"><span>09 / SUPERVISIÓN</span><h4>Provisory Sergeant</h4><p>Sargento provisional de roleplay</p></article>
-      </div></div>
-      <div class="rank-group"><div class="rank-heading"><div><span>04</span><div><h3>Field Staff</h3><p>Personal de campo</p></div></div><small>06 RANGOS</small></div><div class="rank-grid">
-        <article class="rank-card"><span>10 / CAMPO</span><h4>Deputy Sheriff Máster</h4><p>Rango máster de roleplay</p></article><article class="rank-card"><span>11 / CAMPO</span><h4>Bonus Deputy +||</h4><p>Rango de bonificación</p></article><article class="rank-card"><span>12 / CAMPO</span><h4>Bonus Deputy +|</h4><p>Rango de bonificación</p></article><article class="rank-card"><span>13 / CAMPO</span><h4>Senior Deputy</h4><p>Agente sénior</p></article><article class="rank-card"><span>14 / CAMPO</span><h4>Reserve Deputy</h4><p>Agente de reserva</p></article><article class="rank-card"><span>15 / CAMPO</span><h4>Deputy Sheriff</h4><p>Rango base</p></article>
-      </div></div>
-      <p class="rank-disclaimer">Jerarquía ficticia de California Roleplay. Las insignias y los parches enlazados son referencias visuales de una agencia real y no implican afiliación.</p>
-    </section>
-
-    <section class="section training" id="formacion">
-      <div class="section-title-row"><div><p class="section-kicker">PREPARACIÓN Y DESARROLLO</p><h2>Aprender antes<br>de <em>entrar en servicio.</em></h2></div><p>La formación permite que cada aspirante conozca las reglas, practique la comunicación y comprenda las expectativas del departamento.</p></div>
-      <div class="training-grid"><article class="training-card"><span class="card-index">01</span><p class="mini-label">ENTRENAMIENTO</p><h3>Field Training<br>Program <em>(FTP)</em></h3><p>Orientación para nuevos integrantes sobre procedimientos, comunicación, toma de decisiones y estándares de roleplay.</p><a class="inline-link" href="#ingreso">Ver proceso <span>→</span></a></article><article class="training-card training-featured"><span class="card-index">02</span><p class="mini-label">SELECCIÓN</p><h3>Oposiciones<br>ordinarias</h3><p>Proceso de selección para aspirantes. Los requisitos y las fechas se publicarán en las convocatorias vigentes.</p><a class="inline-link light-link" href="#convocatorias">Ver avisos <span>→</span></a></article><article class="training-card"><span class="card-index">03</span><p class="mini-label">ESTÁNDARES</p><h3>Conducta y<br>procedimientos</h3><p>Respeto a las reglas, coordinación con el equipo y representación responsable de la institución ficticia.</p><a class="inline-link" href="#ingreso">Criterios generales <span>→</span></a></article></div>
-    </section>
-
-    <section class="recruit" id="ingreso"><div class="recruit-main"><p class="section-kicker">RECLUTAMIENTO · CALIFORNIA ROLEPLAY</p><h2>¿Listo para dar<br>el <em>siguiente paso?</em></h2><p>Revisa los avisos de ingreso y sigue las instrucciones que publique el equipo del servidor. Las solicitudes se habilitarán cuando exista una convocatoria activa.</p><a class="button button-primary" href="#convocatorias">Consultar convocatorias <span>→</span></a></div><div class="recruit-list"><h3>Perfil del aspirante</h3><ul><li><span>01</span> Respeto a las reglas del servidor</li><li><span>02</span> Comunicación clara y trabajo en equipo</li><li><span>03</span> Disposición para completar el FTP</li><li><span>04</span> Conducta responsable</li><li><span>05</span> Cumplir las instrucciones de selección</li></ul><small>Los requisitos definitivos serán los de cada convocatoria.</small></div></section>
-
-    <section class="section notices" id="convocatorias"><div class="section-title-row"><div><p class="section-kicker">TABLÓN INSTITUCIONAL</p><h2>Noticias y <em>convocatorias.</em></h2></div><p>Las actualizaciones de reclutamiento y los avisos del departamento se comunicarán en este espacio.</p></div><article class="notice"><div class="notice-date"><span>SD</span><small>AVISO<br>GENERAL</small></div><div class="notice-body"><span class="notice-status"><i></i> INFORMACIÓN INSTITUCIONAL</span><h3>Próximas convocatorias</h3><p>Las fechas, plazas disponibles y formularios de inscripción se publicarán aquí cuando el equipo de California Roleplay los anuncie oficialmente.</p></div><span class="notice-code">SD / 001</span></article><p class="notice-foot">ESTA PÁGINA ES FICTICIA Y NO TRAMITA SERVICIOS PÚBLICOS REALES.</p></section>
+    <section class="manifesto" id="manifiesto"><p class="kicker">03 — NUESTRO MANIFIESTO</p><h2>La música no necesita permiso.<br><em>Solo necesita que la escuches.</em></h2><div class="manifesto-bottom"><p>Frecuencia es un concepto editorial dedicado a descubrir música y acercar a la gente a la escena independiente. Menos ruido digital. Más experiencias reales.</p><span>HECHO PARA ESCUCHAR<br>NO SOLO PARA SCROLLEAR.</span></div></section>
   </main>
-
-  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#inicio"><span class="footer-mark">★<b>SD</b></span><span class="brand-copy"><strong>SHERIFF DEPARTMENT</strong><small>CALIFORNIA ROLEPLAY</small></span></a><p>Proyecto ficticio creado para entretenimiento y roleplay.</p><a class="back-top" href="#inicio">VOLVER ARRIBA ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> CALIFORNIA ROLEPLAY</span><span>NO AFILIADO A NINGUNA AGENCIA REAL</span></div></footer>
+  <footer class="footer"><a class="wordmark footer-mark" href="#inicio">F<span>·</span> <b>FRECUENCIA</b></a><span>UN PROYECTO CON EL VOLUMEN ARRIBA.</span><a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a><small>© <span id="year">2026</span> FRECUENCIA · CONCEPTO CREATIVO FICTICIO</small></footer>
 </body>
 </html>
