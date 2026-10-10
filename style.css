@@ -288,3 +288,133 @@ a:focus-visible,button:focus-visible{outline:3px solid #e06a6a;outline-offset:4p
 @media(prefers-reduced-motion:reduce){
   *,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
+
+
+/* Rediseño inspirado en la estructura institucional del sitio LASD:
+   navegación clara, accesos a servicios, fondo claro y azul marino/dorado.
+   Identidad y contenido propios de California Roleplay. */
+:root{--navy:#142c4b;--navy2:#1b3a60;--blue:#234d79;--gold:#c7a45b;--paper:#f4f6f8;--ink:#202d3c;--muted:#647184;--line:#d9e0e7;--white:#fff}
+body{background:#fff;color:#202d3c;font-family:'DM Sans',Arial,sans-serif}
+.fiction-banner{height:30px;background:#10233c;color:#e1e8f0;letter-spacing:1px}
+.status-dot,.hero-meta i{background:#c7a45b;box-shadow:0 0 0 3px #c7a45b25}
+.site-header{height:auto;min-height:86px;padding:14px max(5%,calc((100% - 1240px)/2));background:#fff;border-bottom:1px solid #dce3eb;box-shadow:0 3px 12px #152d4910}
+.brand-logo{width:52px;height:56px}
+.brand-copy strong{color:#173451;letter-spacing:1.2px}
+.brand-copy span{color:#687b91}
+.main-nav{gap:clamp(12px,1.6vw,24px);color:#263e58}
+.main-nav>a:not(.nav-cta):hover,.text-link:hover{color:#a17b34}
+.nav-cta{background:#173a60;color:#fff;border-radius:2px;box-shadow:none}
+.nav-cta:hover{background:#244f7d}
+.nav-cta span{color:#e0c47e}
+.hero{min-height:510px;padding:74px max(7%,calc((100% - 1160px)/2)) 66px;background:linear-gradient(112deg,#142c4b 0%,#1b3a60 58%,#23476b 100%);isolation:isolate}
+.hero-grid{background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);opacity:.6}
+.hero:after{width:510px;height:510px;right:4%;top:10px;border-color:#d7b96c30;box-shadow:0 0 0 55px #d7b96c0a,0 0 0 110px #d7b96c07}
+.hero-content{max-width:720px}
+.eyebrow,.section-label{color:#e2c77f}
+.line{background:#d5b66a}
+.hero-kicker{color:#c4d0de;letter-spacing:2px}
+.hero h1{font-size:clamp(54px,6.5vw,82px);line-height:.98;letter-spacing:.2px}
+.hero h1 span{color:#e3c77c;font-size:.73em;letter-spacing:.5px}
+.hero-description{max-width:550px;color:#d6e0eb;font-size:14px;line-height:1.85}
+.button{border-radius:2px}
+.button-primary{background:#d0b16a;color:#142c4b;box-shadow:none}
+.button-primary:hover{background:#e0c783}
+.button-ghost{border-color:#ffffff70}
+.hero-seal{right:10%;top:140px;color:#dfc16f;opacity:.88}
+.seal-ring{border-color:#dfc16f;outline-color:#dfc16f45}
+.seal-ring:before,.seal-ring:after{border-color:#dfc16f60}
+.hero-bottom{background:#10243c70;border-top-color:#ffffff25}
+.portal-links{padding-top:45px;padding-bottom:48px;background:#f3f6f9;border-bottom:1px solid #e1e6ec}
+.portal-links-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:0 auto 22px;max-width:1200px}
+.portal-kicker{font-size:9px;font-weight:800;letter-spacing:1.8px;color:#9b7a3a}
+.portal-links-heading h2{font-family:'Barlow Condensed',sans-serif;font-size:34px;line-height:1.1;color:#173451;margin:6px 0 0}
+.portal-links-heading>p{font-size:12px;color:#647184;margin:0 0 3px}
+.portal-links-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.portal-link-card{display:grid;grid-template-columns:34px minmax(0,1fr) 16px;align-items:start;gap:12px;padding:19px 15px;min-height:115px;background:#fff;border:1px solid #dce3ea;border-top:3px solid #1e4772;box-shadow:0 3px 10px #132d4906;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.portal-link-card:hover{transform:translateY(-3px);border-top-color:#c7a45b;box-shadow:0 9px 22px #132d4910}
+.portal-link-icon{display:grid;place-items:center;width:31px;height:31px;background:#edf2f7;color:#1d436b;font-size:10px;font-weight:800}
+.portal-link-card strong{display:block;color:#183654;font-size:12px;line-height:1.4}
+.portal-link-card small{display:block;color:#6a7787;font-size:10px;line-height:1.6;margin-top:6px}
+.portal-link-card>b{color:#a18242;font-size:16px;font-weight:500}
+.section{padding-left:max(7%,calc((100% - 1160px)/2));padding-right:max(7%,calc((100% - 1160px)/2))}
+.intro{background:#fff}
+.section-label{color:#a17b34}
+.section-label span{color:#758395}
+.intro h2,.section-heading h2,.recruit h2{color:#173451}
+.intro h2 span,.hierarchy-heading h2 span{color:#a17b34}
+.intro-copy p{color:#586779;font-size:13px;line-height:1.9}
+.stats-grid{gap:14px}
+.stat-card{border:1px solid #dce3ea;background:#f7f9fb;border-radius:2px;box-shadow:none}
+.stat-number{color:#183654}
+.stat-number span{color:#a17b34}
+.leadership-card{border-radius:2px;background:linear-gradient(110deg,#142c4b,#1f4268);box-shadow:none}
+.leadership-symbol{border-color:#c7a45b}
+.leadership-symbol span{color:#dfc16f}
+.hierarchy{background:#f2f5f8}
+.hierarchy:before{background:linear-gradient(#c7a45b,#1b3a60,transparent)}
+.hierarchy-heading h2{color:#173451}
+.official-insignia-panel{border-radius:2px;background:linear-gradient(115deg,#183554,#10243c);border:1px solid #274a70;box-shadow:none}
+.official-insignia-copy .program-tag{color:#dfc16f}
+.rank-group-heading h3{color:#173451}
+.rank-group-index{color:#a17b34}
+.rank-group-count{border-radius:1px;background:#fff;color:#5f6f82;border-color:#d5dee7}
+.rank-list .rank-card{border-radius:2px;background:#fff;border-color:#d7e0e9;box-shadow:0 2px 8px #142c4b07}
+.rank-list .rank-card:hover{border-color:#b9a16d;background:#fff;box-shadow:0 7px 16px #142c4b0d}
+.rank-list .rank-card:before{border-radius:0}
+.rank-list .rank-number,.rank-list .rank-order{color:#9a7838}
+.rank-list .rank-card h4{color:#183654}
+.rank-list .rank-card p{color:#647184}
+.rank-list .rank-chief{background:linear-gradient(135deg,#1b3a60,#142c4b);border-color:#244d76}
+.rank-list .rank-chief h4{color:#fff}
+.rank-list .rank-chief .rank-order,.rank-list .rank-chief .rank-number{color:#e1c47b}
+.rank-list .rank-chief p{color:#d0dbe7}
+.rank-disclaimer{border-top-color:#d5dee7;color:#667588}
+.training{background:#fff}
+.section-heading h2{color:#173451}
+.section-heading>p{color:#647184}
+.program-card{border:1px solid #dce3ea;border-radius:2px;box-shadow:none}
+.program-card:hover{border-color:#c7a45b;box-shadow:0 8px 20px #142c4b0c}
+.program-card.featured{background:#173654;border-color:#173654}
+.program-icon{color:#a17b34}
+.program-card h3{color:#173451}
+.program-card.featured h3{color:#fff}
+.program-card p{color:#647184}
+.program-card.featured p{color:#d0dbe7}
+.program-card .text-link{color:#173654}
+.program-card.featured .text-link{color:#fff}
+.recruit{background:#edf1f5}
+.recruit-panel{border-radius:2px;box-shadow:none}
+.recruit-copy{background:linear-gradient(125deg,#1c4268,#142c4b)}
+.recruit h2 span{color:#dfc16f}
+.button-light{background:#fff;color:#173654}
+.requirements{background:#10243c}
+.notices{background:#fff}
+.notice-card{border-radius:2px;border-color:#dce3ea;box-shadow:none}
+.notice-card:hover{border-color:#c7a45b;box-shadow:0 7px 18px #142c4b0b}
+.notice-content h3{color:#173451}
+.notice-index{color:#a17b34}
+.site-footer{background:#10243c;color:#fff}
+.back-top{color:#dfc16f}
+.footer-bottom{border-top-color:#ffffff25}
+@media(max-width:900px){
+ .portal-links-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .portal-links-heading h2{font-size:30px}
+ .hero-seal{right:4%;opacity:.3}
+}
+@media(max-width:650px){
+ .site-header{padding:12px 5%;min-height:72px}
+ .hero{padding:55px 7% 70px;min-height:570px}
+ .hero:after{right:-250px;top:70px;width:500px;height:500px}
+ .hero h1{font-size:clamp(49px,13vw,72px)}
+ .hero h1 span{font-size:.67em;line-height:1.1}
+ .hero-seal{right:-55px;top:220px;opacity:.16}
+ .portal-links{padding-top:38px;padding-bottom:38px}
+ .portal-links-heading{display:block}
+ .portal-links-heading>p{margin-top:10px}
+ .portal-links-grid{grid-template-columns:1fr;gap:9px}
+ .portal-link-card{min-height:unset;padding:15px}
+ .section{padding-left:6%;padding-right:6%}
+}
+@media(max-width:380px){
+ .portal-link-card{grid-template-columns:30px minmax(0,1fr) 14px;gap:9px}
+}
