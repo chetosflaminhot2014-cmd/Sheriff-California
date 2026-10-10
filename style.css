@@ -4,3 +4,24 @@
 @media(max-width:900px){.site-header{padding:0 5%}.main-nav{gap:15px}.main-nav>a{font-size:10px}.nav-cta{padding:11px}.hero-seal{right:7%;opacity:.5}.hero-content{max-width:570px}.section{padding-left:6%;padding-right:6%}.leadership-card{grid-template-columns:75px 1fr;gap:22px}.leadership-symbol{width:68px;height:78px}.leadership-note{grid-column:2}.program-grid{gap:10px}.program-card{padding:22px 17px}.recruit-copy,.requirements{padding:34px 28px}}
 @media(max-width:650px){.fiction-banner{font-size:8px;letter-spacing:1px}.site-header{height:72px}.brand-mark{width:38px;height:43px}.brand-copy strong{font-size:10px}.brand-copy span{font-size:8px}.menu-toggle{display:block}.main-nav{display:none;position:absolute;left:0;right:0;top:72px;background:#fff;padding:15px 6% 22px;box-shadow:0 12px 18px #0b13211a;align-items:stretch;gap:0;flex-direction:column}.main-nav.open{display:flex}.main-nav>a{padding:13px 0;border-bottom:1px solid #ecece8}.main-nav .nav-cta{padding:13px;margin-top:10px;text-align:center}.hero{padding:65px 7% 70px;min-height:590px}.hero-seal{right:-48px;top:225px;opacity:.17;transform:scale(.9)}.hero h1{font-size:clamp(59px,16vw,83px)}.hero-description{max-width:360px;font-size:12px}.hero-meta{gap:17px;flex-wrap:wrap;margin-top:38px}.hero-bottom{padding:13px 7%;font-size:7px}.section{padding:65px 7%}.intro-grid{grid-template-columns:1fr;gap:23px}.intro h2,.section-heading h2,.recruit h2{font-size:48px}.stats-grid{margin-top:38px}.stat-card{padding:20px 12px}.stat-number{font-size:29px}.stat-caption{font-size:9px}.leadership{padding-top:0}.leadership-card{padding:28px 22px;grid-template-columns:55px 1fr;gap:17px}.leadership-symbol{width:53px;height:65px}.leadership-symbol b{font-size:19px}.leadership-info h2{font-size:28px}.leadership-info>p{font-size:9px}.leadership-note{grid-column:1/-1;margin-top:9px}.section-heading{display:block}.section-heading>p{margin-top:20px}.program-grid{grid-template-columns:1fr}.program-card{min-height:0;padding:25px}.program-card h3{margin-top:23px}.program-card p{font-size:11px}.recruit-panel{grid-template-columns:1fr}.recruit-copy,.requirements{padding:32px 25px}.notice-card{grid-template-columns:1fr;gap:12px;padding:21px}.notice-index{text-align:left}.notice-foot{flex-direction:column;gap:7px}.site-footer{padding:32px 7% 0;grid-template-columns:1fr auto}.site-footer>p{grid-column:1/-1;grid-row:2;margin:0}.back-top{grid-column:2;grid-row:1}.footer-bottom{flex-direction:column;gap:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Jerarquía de California Roleplay */
+.hierarchy{background:#fff}
+.patch-feature{display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:center;margin:35px 0;padding:25px;background:#f4f3ef;border:1px solid var(--line)}
+.patch-feature img{width:145px;height:145px;object-fit:contain;background:#fff;padding:8px;border-radius:4px}
+.patch-feature h3{font-size:22px;margin:8px 0}
+.patch-feature p{font-size:13px;color:var(--muted);max-width:700px}
+.rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.rank-card{min-height:190px;border:1px solid var(--line);padding:22px;background:#fff;position:relative}
+.rank-chief{background:var(--navy);color:#fff;border-color:var(--navy)}
+.rank-insignia{height:42px;color:var(--gold);font-size:25px;display:flex;align-items:center;letter-spacing:4px;font-weight:900}
+.rank-insignia.chevrons{font-size:32px;letter-spacing:0}
+.rank-insignia.recruit{font-family:'Barlow Condensed',sans-serif;font-size:27px}
+.rank-order{font-size:9px;letter-spacing:1.5px;color:#9a7a3f;font-weight:800;margin-top:9px}
+.rank-card h3{font-family:'Barlow Condensed',sans-serif;font-size:24px;text-transform:uppercase;letter-spacing:.5px;margin:5px 0}
+.rank-card p:not(.rank-person){font-size:12px;color:var(--muted);margin:0}
+.rank-chief p:not(.rank-person){color:#c7ced9}
+.rank-person{font-size:13px;color:var(--gold);font-weight:800;margin:0}
+.rank-disclaimer{font-size:11px;color:var(--muted);margin-top:18px}
+@media(max-width:760px){.patch-feature{grid-template-columns:1fr;text-align:center}.patch-feature img{margin:auto}.rank-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rank-card{padding:17px;min-height:175px}.rank-card h3{font-size:20px}}
+@media(max-width:420px){.rank-grid{grid-template-columns:1fr 1fr}.rank-card h3{font-size:18px}.rank-order{font-size:8px}}
