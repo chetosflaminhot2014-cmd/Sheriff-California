@@ -86,3 +86,25 @@
 .insignia-patch{display:block;width:39px;height:39px;object-fit:contain;border-radius:2px;background:#f3f1e9;padding:2px}
 .rank-chief .insignia-patch{background:#fff}
 @media(max-width:650px){.rank-insignia{min-width:54px;max-width:90px}.insignia-art{height:25px}.bar-art{height:21px}.chevron-art{height:25px}.insignia-patch{width:34px;height:34px}}
+
+
+/* Jerarquía limpia: distintivos reales en un panel y rangos en tarjetas tipográficas */
+.official-insignia-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,.85fr);gap:32px;align-items:center;margin:30px 0 54px;padding:30px;border:1px solid rgba(201,164,82,.24);border-radius:18px;background:linear-gradient(125deg,rgba(19,31,48,.96),rgba(10,17,28,.96))}
+.official-insignia-copy h3{margin:10px 0 12px;color:#f4f0e6;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.03em}
+.official-insignia-copy p{max-width:510px;color:#aeb8c5;line-height:1.75;font-size:14px}
+.official-insignia-images{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}
+.official-insignia-images figure{margin:0;min-width:0;text-align:center}
+.official-insignia-images img{width:100%;height:150px;object-fit:contain;padding:10px;background:rgba(255,255,255,.96);border-radius:12px}
+.official-insignia-images figcaption{margin-top:10px;color:#c7ced8;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.rank-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.rank-list .rank-card{position:relative;min-height:142px;padding:25px 20px 20px 24px;border:1px solid rgba(164,177,193,.15);border-radius:12px;background:rgba(16,26,40,.68);transition:border-color .2s ease,transform .2s ease,background .2s ease}
+.rank-list .rank-card:hover{transform:translateY(-2px);border-color:rgba(207,171,91,.5);background:rgba(22,34,50,.95)}
+.rank-list .rank-number{position:absolute;top:16px;right:17px;color:#c7a55b;font-size:12px;font-weight:700;letter-spacing:.08em}
+.rank-list .rank-order{margin:0 40px 13px 0;color:#a0acba;font-size:9px;letter-spacing:.16em;font-weight:700}
+.rank-list .rank-card h4{margin:0 0 8px;color:#f2f4f7;font-size:18px;line-height:1.25}
+.rank-list .rank-card p{margin:0;color:#9aa8b8;font-size:13px;line-height:1.5}
+.rank-list .rank-chief{border-color:rgba(207,171,91,.45);background:linear-gradient(135deg,rgba(47,39,24,.6),rgba(16,26,40,.85))}
+.rank-list .rank-chief h4{color:#e5c779}
+.rank-disclaimer{max-width:850px;margin:30px auto 0;color:#8996a6;font-size:12px;line-height:1.7;text-align:center}
+@media(max-width:900px){.rank-list{grid-template-columns:repeat(2,minmax(0,1fr))}.official-insignia-panel{gap:22px;padding:24px}}
+@media(max-width:620px){.official-insignia-panel{grid-template-columns:1fr;gap:24px;margin:24px 0 38px;padding:20px}.official-insignia-images img{height:125px}.rank-list{grid-template-columns:1fr;gap:10px}.rank-list .rank-card{min-height:unset;padding:21px 18px}.rank-list .rank-card h4{font-size:17px}.rank-group-heading{gap:12px}.rank-group-count{white-space:nowrap}}
