@@ -1,15 +1,54 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090e1b"><meta name="description" content="Pulso Social: inicia conversaciones auténticas."><title>Pulso Social — Conecta con algo real</title><link rel="stylesheet" href="styles.css"></head>
-<body><header class="top"><a class="brand" href="#"><span class="mark">⌁</span><span>PULSO <b>SOCIAL</b><small class="brand-sub">CONVERSACIONES CON INTENCIÓN</small></span></a><nav class="top-links"><a href="#como-funciona">Cómo funciona</a><a href="#principios">Principios</a></nav><span class="status"><i></i> TU ESPACIO, TU VOZ</span></header>
-<main><section class="hero"><div class="hero-copy"><small><span class="eyebrow-dot"></span> OBSERVA · CONECTA · CONVERSA</small><h1>Que empiece<br>con algo <em>real.</em></h1><p>Convierte un detalle de un perfil en una conversación natural. Encuentra tu punto de partida, elige tu tono y escribe como tú.</p><a class="hero-link" href="#herramienta">Crear mi punto de partida <span>↘</span></a><div class="hero-stats"><div><b>01</b><span>Observa</span></div><div><b>02</b><span>Encuentra un tema</span></div><div><b>03</b><span>Conversa con respeto</span></div></div></div><div class="hero-visual" aria-hidden="true"><div class="visual-glow"></div><div class="visual-ring ring-one"></div><div class="visual-ring ring-two"></div><div class="visual-core"><span>p.</span><small>UNA CONEXIÓN<br>EMPIEZA AQUÍ</small></div><div class="floating-note note-top">✦ <span>Curiosidad real</span></div><div class="floating-note note-bottom"><i></i><span>Sin frases prefabricadas</span></div><div class="visual-index">P / 001 — SOCIAL TOOLKIT</div></div></section><section class="steps-strip" id="como-funciona"><div><span>01</span><b>Observa detalles</b><p>Usa solo lo que realmente viste.</p></div><div><span>02</span><b>Elige tu estilo</b><p>Casual, curioso, directo o divertido.</p></div><div><span>03</span><b>Hazlo tuyo</b><p>Edita la idea antes de enviarla.</p></div></section>
-<div class="layout" id="herramienta"><section class="panel"><div class="panel-topline"><div class="step-bubble">01</div><div><div class="kicker">TU ESPACIO DE IDEAS</div><h2>Encuentra el inicio.</h2></div><span class="panel-tag">PERSONALIZABLE</span></div><p class="muted intro-copy">Selecciona señales reales del perfil. Cuanto más concreto seas, más personal será la propuesta.</p><label class="label" for="name">Nombre (opcional)</label><input id="name" class="field" maxlength="60" placeholder="Ej. Valentina">
-<div class="signals-head"><label class="label">¿Qué aparece en su perfil?</label><span id="count" class="counter">0 seleccionadas</span></div><p class="muted tiny">Selecciona al menos 3 intereses.</p>
-<div id="signals" class="signals">
-<label><input type="checkbox" value="viajes"><span>✈</span> Viajes</label><label><input type="checkbox" value="mascotas"><span>♡</span> Perros o gatos</label><label><input type="checkbox" value="moda"><span>◇</span> Moda y outfits</label><label><input type="checkbox" value="lectura"><span>▤</span> Libros o lectura</label><label><input type="checkbox" value="deporte"><span>↗</span> Gym o deporte</label><label><input type="checkbox" value="naturaleza"><span>❋</span> Naturaleza</label><label><input type="checkbox" value="comida"><span>⌁</span> Restaurantes y comida</label><label><input type="checkbox" value="familia"><span>⌂</span> Familia</label><label><input type="checkbox" value="selfies"><span>▣</span> Selfies</label><label><input type="checkbox" value="musica"><span>♫</span> Arte o música</label><label><input type="checkbox" value="estudios"><span>⌑</span> Estudios o cursos</label><label><input type="checkbox" value="salidas"><span>✦</span> Fiestas y salidas</label><label><input type="checkbox" value="voluntariado"><span>♡</span> Animales o causas</label><label><input type="checkbox" value="cocina"><span>⌘</span> Cocina o su casa</label><label><input type="checkbox" value="trabajo"><span>▥</span> Trabajo o proyectos</label><label><input type="checkbox" value="autos"><span>⌁</span> Autos o tecnología</label></div>
-<label class="label" for="detail">Un detalle concreto (opcional)</label><textarea id="detail" class="field detail-field" maxlength="240" rows="3" placeholder="Ej. Subió una foto en un concierto de una banda que también escucho…"></textarea><p class="muted tiny">No incluyas datos privados ni información sensible.</p><div class="upload"><div><b>¿Quieres añadir una captura?</b><p class="muted tiny">Opcional · JPG, PNG o WEBP, máximo 5 MB.</p></div><label class="upload-btn" for="image">Adjuntar imagen</label><input hidden id="image" type="file" accept="image/png,image/jpeg,image/webp"><div id="preview" hidden></div><p class="muted tiny">Adjunta solo imágenes que tengas permiso para compartir. Evita datos privados.</p></div>
-<div class="selects"><div><label class="label" for="tone">Tono</label><select id="tone" class="field"><option value="casual">Casual y natural</option><option value="divertido">Divertido, sin forzar</option><option value="directo">Directo y seguro</option><option value="curioso">Curioso e interesante</option></select></div><div><label class="label" for="style">Estilo</label><select id="style" class="field"><option value="breve">Breve</option><option value="conversacional">Conversacional</option><option value="atrevido respetuoso">Atrevido, con respeto</option></select></div></div>
-<div id="hint" class="muted tiny">0 señales · marca al menos 3 para comenzar.</div><button id="go" class="primary" disabled>Crear mis mensajes <span>↗</span></button><p class="muted tiny center">La IA propone ideas; tú decides qué enviar. No garantiza respuestas.</p></section>
-<aside><section class="panel output"><div class="panel-topline"><div class="step-bubble step-two">02</div><div><div class="kicker">PROPUESTAS A TU ESTILO</div><h2>Tu punto de partida.</h2></div></div><div id="empty" class="empty"><div class="orbit">✳</div><b>Tu análisis aparecerá aquí</b><p class="muted">Marca intereses y crea mensajes basados en detalles reales del perfil.</p></div><div id="loading" hidden><div class="spinner"></div><b>Buscando un buen punto de partida…</b></div><div id="results" hidden><p id="analysis" class="analysis"></p><div id="messages"></div><button id="copyAll" class="secondary">Copiar todos los mensajes ⧉</button></div></section>
-<section class="panel history-panel" id="historial"><div class="history-title"><div><div class="kicker">TU ESPACIO PERSONAL</div><h2>Historial y favoritos.</h2></div><span id="historyCount" class="counter">0 sesiones</span></div><p class="muted tiny">Tus propuestas se guardan solo en este navegador. No se sincronizan entre dispositivos.</p><div class="history-tabs"><button id="showHistory" class="history-tab active" type="button">Historial</button><button id="showFavorites" class="history-tab" type="button">Favoritos ★</button><button id="clearHistory" class="history-clear" type="button">Borrar historial</button></div><div id="historyList"></div><div id="historyEmpty" class="history-empty">Todavía no hay propuestas guardadas. Crea tus primeros mensajes y aparecerán aquí.</div></section>
-<section class="panel principles" id="principios"><div class="kicker">LA BASE · 4 PRINCIPIOS</div><h2>Conecta desde lo real.</h2><div class="principle"><i>01</i><div><b>Autenticidad</b><p>No finjas intereses que no tienes.</p></div></div><div class="principle"><i>02</i><div><b>Seguridad</b><p>Expresa interés sin depender de la respuesta.</p></div></div><div class="principle"><i>03</i><div><b>Curiosidad</b><p>Pregunta por algo concreto que notaste.</p></div></div><div class="principle"><i>04</i><div><b>Respeto</b><p>Un no o el silencio también son respuestas.</p></div></div></section></aside></div>
-<footer><a class="brand" href="#"><span class="mark">⌁</span><span>PULSO <b>SOCIAL</b><small class="brand-sub">CONVERSACIONES CON INTENCIÓN</small></span></a><span>Las mejores conversaciones no se fuerzan.</span><a class="footer-top" href="#">VOLVER ARRIBA ↑</a></footer></main><div id="toast" class="toast" role="status"></div><script src="app.js"></script></body></html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090e1b">
+<meta name="description" content="Asistente de Juan: IA personal para tareas, ideas y organización.">
+<title>Asistente de Juan · IA personal</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#" aria-label="Asistente de Juan"><span class="brand-mark">J</span><span><b>Asistente</b><small>DE JUAN</small></span></a>
+  <button class="new-chat" id="newChat" type="button"><span>＋</span> Nuevo chat</button>
+  <div class="side-label">TUS CONVERSACIONES</div>
+  <div id="conversationList" class="conversation-list"></div>
+  <div class="sidebar-bottom">
+    <div class="profile-mark">J</div><div class="profile-copy"><b>Asistente de Juan</b><small>IA personal con Gemini</small></div>
+    <button id="clearChats" class="icon-button" title="Borrar conversaciones" aria-label="Borrar conversaciones">⋯</button>
+  </div>
+</aside>
+<main class="main">
+  <header class="topbar">
+    <button id="mobileMenu" class="icon-button mobile-menu" aria-label="Abrir conversaciones">☰</button>
+    <div class="topbar-title"><span class="online-dot"></span><div><b>Asistente de Juan</b><small>Tu espacio para pensar y resolver</small></div></div>
+    <span class="model-chip"><span class="online-dot"></span> Gemini</span>
+  </header>
+  <section class="chat-area" id="chatArea" aria-live="polite">
+    <div id="welcome" class="welcome">
+      <div class="welcome-symbol"><span>J</span><i></i></div>
+      <p class="eyebrow">TU ASISTENTE PERSONAL</p>
+      <h1>¿Qué vamos a<br><em>resolver hoy?</em></h1>
+      <p class="welcome-copy">Puedo ayudarte a estudiar, organizar tus pendientes, desarrollar ideas o entender algo paso a paso.</p>
+      <div class="suggestions">
+        <button class="suggestion" data-prompt="Ayúdame a organizar mis tareas y pendientes de hoy."><span class="suggestion-icon">▦</span><span><b>Organizar mi día</b><small>Prioridades y pendientes</small></span><span class="suggestion-arrow">↗</span></button>
+        <button class="suggestion" data-prompt="Explícame un tema difícil paso a paso y con ejemplos sencillos."><span class="suggestion-icon">✳</span><span><b>Estudiar un tema</b><small>Explicaciones claras</small></span><span class="suggestion-arrow">↗</span></button>
+        <button class="suggestion" data-prompt="Ayúdame a desarrollar una idea para un proyecto desde cero."><span class="suggestion-icon">⌘</span><span><b>Crear una idea</b><small>Proyectos y soluciones</small></span><span class="suggestion-arrow">↗</span></button>
+        <button class="suggestion" data-prompt="Quiero aprender programación. Hazme una ruta sencilla para empezar y practicar."><span class="suggestion-icon">〈/〉</span><span><b>Aprender programación</b><small>Práctica paso a paso</small></span><span class="suggestion-arrow">↗</span></button>
+      </div>
+    </div>
+    <div id="messages" class="messages"></div>
+    <div id="typing" class="typing" hidden><span></span><span></span><span></span><small>El asistente está pensando…</small></div>
+  </section>
+  <div class="composer-wrap">
+    <form id="chatForm" class="composer">
+      <textarea id="messageInput" rows="1" maxlength="6000" placeholder="Escribe tu mensaje…" aria-label="Escribe tu mensaje"></textarea>
+      <div class="composer-bottom"><span>Enter para enviar · Shift + Enter para salto de línea</span><button id="sendButton" type="submit" aria-label="Enviar mensaje"><span>↑</span></button></div>
+    </form>
+    <p class="disclaimer">La IA puede equivocarse. No compartas contraseñas ni datos personales sensibles.</p>
+  </div>
+</main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
