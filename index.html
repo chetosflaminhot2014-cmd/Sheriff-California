@@ -3,66 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11110f">
-  <meta name="description" content="Frecuencia: descubre conciertos, artistas y sonidos nuevos de la escena independiente.">
-  <title>FRECUENCIA — La música está pasando</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta name="theme-color" content="#090e1b">
+  <meta name="description" content="Pulso Social: ideas para iniciar conversaciones auténticas, naturales y respetuosas.">
+  <title>Pulso Social — Conecta con algo real</title>
+  <meta http-equiv="refresh" content="0; url=/pulso-social/">
+  <script>window.location.replace("/pulso-social/");</script>
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#090e1b;color:#f4f6ff;font:16px/1.6 system-ui,sans-serif}
+    main{width:min(560px,100%);padding:clamp(28px,7vw,56px);border:1px solid #27324b;border-radius:24px;background:linear-gradient(145deg,#111a2d,#0d1322);box-shadow:0 24px 80px #0005}
+    .brand{font-size:13px;letter-spacing:.18em;color:#a9b9d8;font-weight:700}.brand b{color:#fff}.mark{color:#8ca8ff;font-size:24px;vertical-align:middle;margin-right:8px}
+    h1{font-size:clamp(34px,8vw,54px);line-height:1.04;letter-spacing:-.05em;margin:28px 0 14px}p{color:#b4bfd4;margin-bottom:28px}
+    a{display:inline-block;padding:13px 18px;border-radius:12px;background:#a8baff;color:#0a1020;text-decoration:none;font-weight:750}
+  </style>
 </head>
 <body>
-  <div class="topline"><span class="live-dot"></span> CULTURA SONORA INDEPENDIENTE <span class="topline-right">NUEVOS SONIDOS, SIN RUIDO.</span></div>
-  <header class="header">
-    <a class="wordmark" href="#inicio" aria-label="Frecuencia, inicio">F<span>·</span> <b>FRECUENCIA</b></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <nav class="nav" id="mainNav" aria-label="Navegación principal">
-      <a href="#agenda">Agenda</a><a href="#descubre">Descubre</a><a href="#manifiesto">El proyecto</a>
-      <a class="nav-button" href="#agenda">Ver eventos <span>↗</span></a>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <p class="kicker"><span class="line"></span> UNA VENTANA A LA ESCENA</p>
-        <h1>EL SONIDO<br>DE LO QUE<br><em>VIENE.</em></h1>
-        <p class="hero-text">Conciertos pequeños. Artistas enormes. Música que todavía no sabes que te va a cambiar el día.</p>
-        <div class="hero-actions"><a class="button button-lime" href="#agenda">Explorar la agenda <span>↗</span></a><a class="text-link" href="#descubre">Conoce nuevos sonidos <span>↓</span></a></div>
-        <div class="hero-foot"><span>01 / ESCENA INDEPENDIENTE</span><span>SONIDO LOCAL · IDEAS GRANDES</span></div>
-      </div>
-      <div class="hero-art" aria-label="Composición abstracta inspirada en ondas sonoras" role="img">
-        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div>
-        <div class="art-disc"><div class="disc-core"></div></div>
-        <div class="art-sticker">TURN<br>IT<br>UP<span>✳</span></div>
-        <div class="art-label label-top">FREQ. 001 — 2026</div><div class="art-label label-bottom">VOLUMEN AL MÁXIMO / MENTE ABIERTA</div>
-        <div class="art-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="Lema"><div>DESCUBRE ALGO NUEVO <span>✳</span> SAL A ESCUCHAR <span>✳</span> APOYA LA ESCENA <span>✳</span> DESCUBRE ALGO NUEVO <span>✳</span> SAL A ESCUCHAR <span>✳</span></div></section>
-
-    <section class="section agenda-section" id="agenda">
-      <div class="section-heading"><div><p class="kicker">01 — PRÓXIMAS FRECUENCIAS</p><h2>Hay que estar <em>ahí.</em></h2></div><p class="section-intro">No son estadios gigantes. Son noches que se quedan contigo.</p></div>
-      <div class="filters" role="group" aria-label="Filtrar eventos">
-        <button class="filter active" data-filter="todos" aria-pressed="true">Todo</button><button class="filter" data-filter="indie" aria-pressed="false">Indie</button><button class="filter" data-filter="electronica" aria-pressed="false">Electrónica</button><button class="filter" data-filter="alternativo" aria-pressed="false">Alternativo</button>
-      </div>
-      <div class="event-grid" id="eventGrid">
-        <article class="event-card" data-genre="indie"><div class="event-art art-pink"><span class="art-number">LIVE / 001</span><div class="sun-shape"></div><div class="poster-word">SOFT<br>NOISE</div><span class="poster-foot">GUITARRAS · SUEÑOS · DISTORSIÓN</span></div><div class="event-info"><div class="event-meta"><span>INDIE / ROCK</span><span>CDMX</span></div><h3>Soft Noise Sessions</h3><p>Una noche para escuchar más cerca.</p><div class="event-bottom"><span><b>18</b> OCT <i>·</i> 20:00</span><a href="#manifiesto" aria-label="Más sobre Soft Noise Sessions">↗</a></div></div></article>
-        <article class="event-card" data-genre="electronica"><div class="event-art art-lilac"><span class="art-number">LIVE / 002</span><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="poster-word poster-electro">PULSO<br>FUTURO</div><span class="poster-foot">BASS · SYNTH · AFTER HOURS</span></div><div class="event-info"><div class="event-meta"><span>ELECTRÓNICA</span><span>GUADALAJARA</span></div><h3>Pulso Futuro</h3><p>Frecuencias para salir de órbita.</p><div class="event-bottom"><span><b>24</b> OCT <i>·</i> 22:00</span><a href="#manifiesto" aria-label="Más sobre Pulso Futuro">↗</a></div></div></article>
-        <article class="event-card" data-genre="alternativo"><div class="event-art art-green"><span class="art-number">LIVE / 003</span><div class="green-shape"></div><div class="poster-word poster-ruido">RUIDO<br>BUENO</div><span class="poster-foot">SIN REGLAS · SIN ETIQUETAS</span></div><div class="event-info"><div class="event-meta"><span>ALTERNATIVO</span><span>MONTERREY</span></div><h3>Ruido Bueno Club</h3><p>Lo raro también se baila.</p><div class="event-bottom"><span><b>01</b> NOV <i>·</i> 21:00</span><a href="#manifiesto" aria-label="Más sobre Ruido Bueno Club">↗</a></div></div></article>
-      </div>
-      <p class="demo-note">Agenda conceptual de demostración · Los eventos y fechas son ilustrativos.</p>
-    </section>
-
-    <section class="discover" id="descubre">
-      <div class="discover-art"><div class="big-star">✳</div><span class="vertical-note">NO AL ALGORITMO DE SIEMPRE</span><div class="discover-stamp">LISTEN<br>CLOSER.</div></div>
-      <div class="discover-copy"><p class="kicker">02 — CAMBIA DE FRECUENCIA</p><h2>Tu próxima canción favorita no está en tu <em>repetición.</em></h2><p>Sal del bucle. Encuentra proyectos emergentes, sesiones íntimas y sonidos que no caben en una sola etiqueta.</p><div class="genre-list"><span>01 / INDIE</span><span>02 / ELECTRÓNICA</span><span>03 / EXPERIMENTAL</span><span>04 / ALTERNATIVO</span></div><a class="button button-dark" href="#agenda">Encontrar un concierto <span>↗</span></a></div>
-    </section>
-
-    <section class="manifesto" id="manifiesto"><p class="kicker">03 — NUESTRO MANIFIESTO</p><h2>La música no necesita permiso.<br><em>Solo necesita que la escuches.</em></h2><div class="manifesto-bottom"><p>Frecuencia es un concepto editorial dedicado a descubrir música y acercar a la gente a la escena independiente. Menos ruido digital. Más experiencias reales.</p><span>HECHO PARA ESCUCHAR<br>NO SOLO PARA SCROLLEAR.</span></div></section>
+    <div class="brand"><span class="mark">⌁</span>PULSO <b>SOCIAL</b></div>
+    <h1>Menos vueltas.<br>Mejores conversaciones.</h1>
+    <p>Abriendo Pulso Social… Si no te redirige automáticamente, entra con el botón.</p>
+    <a href="/pulso-social/">Abrir Pulso Social ↗</a>
   </main>
-  <footer class="footer"><a class="wordmark footer-mark" href="#inicio">F<span>·</span> <b>FRECUENCIA</b></a><span>UN PROYECTO CON EL VOLUMEN ARRIBA.</span><a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a><small>© <span id="year">2026</span> FRECUENCIA · CONCEPTO CREATIVO FICTICIO</small></footer>
 </body>
 </html>
