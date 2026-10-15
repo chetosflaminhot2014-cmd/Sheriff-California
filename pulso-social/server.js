@@ -3,7 +3,7 @@ const express = require('express');
 const { GoogleGenAI } = require('@google/genai');
 const app = express();
 const PORT = process.env.PORT || 3000;
-const configuredModel = (process.env.GEMINI_MODEL || '').trim();
+const configuredModel = (process.env.GEMINI_MODEL || '').trim().replace(/[.\\s]+$/, '');
 const MODEL = !configuredModel || configuredModel === 'gemini-2.5-flash' ? 'gemini-3.5-flash-lite' : configuredModel;
 app.use(express.json({limit:'7mb'}));
 app.use(express.static(__dirname));
